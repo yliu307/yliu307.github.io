@@ -1,21 +1,47 @@
-<!DOCTYPE html><html lang="en">
-<head><meta charset="UTF-8" /><title>Results</title>
-<meta name="viewport" content="width=device-width,initial-scale=1" />
-<link rel="stylesheet" href="css/style.css" /></head><body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Evaluation Results</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
+  <style>
+    :root{--primary:#ffafcc;--primary-dark:#ff7eb3;--bg:#fdf2f8;--text:#1f2937;}
+    *{margin:0;padding:0;box-sizing:border-box;font-family:'Inter',sans-serif;}
+    body{background:var(--bg);color:var(--text);line-height:1.6;}
+    a{color:var(--primary-dark);text-decoration:none;transition:color .2s;}a:hover{color:var(--primary);}  
+    .hero{min-height:40vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:2.5rem 1rem;background:linear-gradient(135deg,var(--primary-dark)0%,var(--primary)100%);color:#fff;}
+    .hero h1{font-size:clamp(2rem,5vw,3.5rem);font-weight:800;}
+    nav{position:sticky;top:0;z-index:10;background:#fff;box-shadow:0 2px 6px rgba(0,0,0,.06);}nav ul{display:flex;justify-content:center;gap:2rem;list-style:none;padding:1rem;}nav a{font-weight:600;color:var(--text);}nav a:hover{color:var(--primary-dark);}  
+    section{padding:3.5rem 1rem;max-width:1100px;margin:0 auto;}section h2{text-align:center;font-size:2rem;font-weight:700;margin-bottom:2rem;color:var(--primary-dark);}  
+    .stats{display:grid;gap:2rem;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));}
+    .stat{background:#fff;border-radius:1rem;padding:2rem;text-align:center;box-shadow:0 4px 16px rgba(0,0,0,.05);}  
+    .stat h3{font-size:2.5rem;font-weight:800;color:var(--primary);margin-bottom:.5rem;}
+    footer{background:#fce7f3;color:#374151;text-align:center;padding:2rem;font-size:.9rem;}
+  </style>
+</head>
+<body>
+  <header class="hero"><h1>Evaluation Highlights</h1></header>
 
-<nav>…</nav>
+  <nav>
+    <ul>
+      <li><a href="index.html">About</a></li>
+      <li><a href="prototype.html">Prototype</a></li>
+      <li><a href="demo.html">Demo Video</a></li>
+      <li><a href="results.html">Results</a></li>
+    </ul>
+  </nav>
 
-<section id="results">
-  <h2>Evaluation Highlights</h2>
-  <p style="text-align:center;max-width:720px;margin:0 auto 2rem;">
-    这里总结测试指标 / 用户访谈要点 / 性能对比…
-  </p>
+  <section>
+    <h2>Key Metrics</h2>
+    <p style="text-align:center;max-width:750px;margin:0 auto 2rem;">Summarize user‑testing metrics, performance benchmarks or any other evaluation outcomes that prove the value of your project.</p>
+    <div class="stats">
+      <div class="stat"><h3>95%</h3><p>User satisfaction</p></div>
+      <div class="stat"><h3>+40%</h3><p>Speed improvement</p></div>
+      <div class="stat"><h3>-30%</h3><p>Error reduction</p></div>
+    </div>
+  </section>
 
-  <div class="stats">
-    <div class="stat"><h3>95%</h3><p>User satisfaction</p></div>
-    <div class="stat"><h3>+40%</h3><p>Speed boost</p></div>
-    <div class="stat"><h3>-30%</h3><p>Error reduction</p></div>
-  </div>
-</section>
-
-<footer>…</footer></body></html>
+  <footer>&copy; 2025 Your Name · Results Page</footer>
+</body>
+</html>
