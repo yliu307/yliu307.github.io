@@ -1,15 +1,42 @@
-<!DOCTYPE html><html lang="en">
-<head><meta charset="UTF-8" /><title>Demo Video</title>
-<meta name="viewport" content="width=device-width,initial-scale=1" />
-<link rel="stylesheet" href="css/style.css" /></head><body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Demo Video</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
+  <style>
+    :root{--primary:#ffafcc;--primary-dark:#ff7eb3;--bg:#fdf2f8;--text:#1f2937;}
+    *{margin:0;padding:0;box-sizing:border-box;font-family:'Inter',sans-serif;}
+    body{background:var(--bg);color:var(--text);line-height:1.6;}
+    video{max-width:100%;border-radius:0.75rem;box-shadow:0 4px 16px rgba(0,0,0,.05);}a{color:var(--primary-dark);text-decoration:none;transition:color .2s;}a:hover{color:var(--primary);}  
+    .hero{min-height:40vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:2.5rem 1rem;background:linear-gradient(135deg,var(--primary-dark)0%,var(--primary)100%);color:#fff;}
+    .hero h1{font-size:clamp(2rem,5vw,3.5rem);font-weight:800;}
+    nav{position:sticky;top:0;z-index:10;background:#fff;box-shadow:0 2px 6px rgba(0,0,0,.06);}nav ul{display:flex;justify-content:center;gap:2rem;list-style:none;padding:1rem;}nav a{font-weight:600;color:var(--text);}nav a:hover{color:var(--primary-dark);}  
+    section{padding:3.5rem 1rem;max-width:900px;margin:0 auto;}section h2{text-align:center;font-size:2rem;font-weight:700;margin-bottom:2rem;color:var(--primary-dark);}  
+    footer{background:#fce7f3;color:#374151;text-align:center;padding:2rem;font-size:.9rem;}
+  </style>
+</head>
+<body>
+  <header class="hero"><h1>Demo Video</h1></header>
 
-<nav>…</nav>
+  <nav>
+    <ul>
+      <li><a href="index.html">About</a></li>
+      <li><a href="prototype.html">Prototype</a></li>
+      <li><a href="demo.html">Demo Video</a></li>
+      <li><a href="results.html">Results</a></li>
+    </ul>
+  </nav>
 
-<section id="demo">
-  <h2>Demo Video</h2>
-  <video controls poster="assets/demo-thumbnail.jpg">
-    <source src="assets/demo.mp4" type="video/mp4" />
-  </video>
-</section>
+  <section>
+    <h2>Watch the Walk‑through</h2>
+    <video controls poster="assets/demo-thumbnail.jpg">
+      <source src="assets/demo.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+  </section>
 
-<footer>…</footer></body></html>
+  <footer>&copy; 2025 Your Name · Demo Page</footer>
+</body>
+</html>
